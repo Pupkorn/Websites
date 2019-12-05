@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <style>
+            
+
+            body {
+                background-image: url('hotben.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            .row-header {
+                height:70px;
+                background-color: rgb(105, 105, 105);
+                border-bottom-right-radius: 13px;
+                border-bottom-left-radius: 13px;
+                color: rgb(224, 224, 224);
+            }
+
+            .header {
+                font-size: 42px;
+                margin-top: 4px;
+            }
+
+            .topnav {
+                overflow: hidden;
+            }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 16px 18px;
+                text-decoration: none;
+                font-size: 17px;
+                opacity: 0.7;
+                transition: 0.5s;
+                margin-top: 7px;
+             }
+
+            .topnav a:hover {
+                opacity: 1;
+                background-color: #ddd;
+                color: black;
+                border-radius: 20px;
+            }
+
+            .my-col-1 {
+                border: 2px solid grey;
+                border-radius: 4px;
+                background-color: rgba(87, 143, 161, 0.747);
+                height: 20%;
+                font-size: 27px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: white;
+                text-align:center;
+                opacity: 0.7;
+                transition: 0.4s;
+            }
+
+            .my-col-1:hover {
+                opacity: 1;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+
+            .my-col-2 {
+                border: 2px solid darkgray;
+                background-color: rgba(25, 74, 129, 0.705);
+                border-radius: 10px;
+                height: 300px;
+                font-size: 31px;
+                color: rgb(209, 209, 209);
+                opacity: 0.7;
+                transition: 0.5s;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .my-col-2:hover {
+                opacity: 1;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+
+            .my-footer {
+                background-color: rgb(105, 105, 105);
+                color: white;
+                text-align: center;
+                height: 110px;
+                border-top-right-radius: 13px;
+                border-top-left-radius: 13px;
+            }
+
+            .fa {
+                padding: 14px;
+                width: 60px;
+                font-size: 30px;
+                border-radius: 50%;
+                text-align: center;
+                text-decoration: none !important;
+                margin-top: 17px;
+                transition: 0.4s;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-facebook {
+                background: #3b5998;
+                color:white;
+            }
+
+            .fa-twitter {
+                background: #55acee;
+                color: white;
+            }
+
+            .fa-instagram {
+                background: rgb(75, 128, 207);
+                color: white;
+            }
+
+            .footer {
+                text-align:left;
+                margin-top: 15px;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <div class="container my-container">
+            <div class="row justify-content-between my-row row-header">
+                <div class="col-4 my-col">
+                    <h1 class="header">Ben's Code</h1>
+                </div>
+                <div class="col-4 my-col">
+                        <div class="topnav">
+                            <a href="#">Home</a>
+                            <a href="#">News</a>
+                            <a href="#">Contact</a>
+                            <a href="#">About</a>
+                        </div>
+                </div>
+            </div>
+            <div class="row justify-content-around my-row">
+                <div class="col-3 my-col-1">
+                    <p>Last time in the wilderness i wasn't  of all, next ifen tpmb lasten gamblas gl of all, next ifen tpmb lasten gamblas gl of all, next ifen tpmb lasten gamblas glthe worst of all,</p>
+                </div>
+                <div class="col-3 my-col-1">
+                    <p>Last time in the wilderness i wasn't the worst of all,  of all, next ifen tpmb lasten gamblas gl of all, next ifen tpmb lasten gamblas g  of all, next ifen tpmb lasten gamblas gll</p>
+                </div>
+                <div class="col-3 my-col-1">
+                    <p>Last time in the wilderness i wasn't the worst of all, next ifen tpmb lasten gamblas glod ropo  of all, next ifen tpmb lasten gamblas glfafssf afs fdafdf gerg be runast nution</p>
+                </div>
+            </div>
+            <div class="row justify-content-around my-row">
+                <div class="col-5 my-col-2">
+                    <p>This is an example paragraph of writing This is an example demonstrasion of writing This is h ofThis is an example paragraph of writing This is an example writing</p>
+                </div>
+                <div class="col-5 my-col-2">
+                    <p> This is an example demonstrasion of This is an example demonstrasion of This is an example demonstrasion of This is an example demonstrasion of This is an ex</p>
+                </div>
+            </div>
+            <div class="row justify-content-around my-footer">
+                <div class="col-3 my-col-3">
+                    <p class="footer">All right are reserverd<br>to refuse service to anyone<br>to whome we choose</p>
+                </div>
+                <div class="col-4 my-col-3">
+                    <div class="bottom_nav">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+
+            </div>
+    </body>
+</html>
