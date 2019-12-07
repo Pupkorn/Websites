@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <style>
 
             #backgroundImage {
@@ -32,7 +33,7 @@
         </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -59,23 +60,132 @@
                 <div class="row my-row">
                     <div class="col-sm-4 my-col bg-light" id="background-image">
                         <p>This is some text you can put over this background image.</p>
-                        <a href="#">link</a>
+                        <button type="button" class="btn btn-secondary">Secondary<span class="border-bottom"></span></button>
                         <p>This is some text you can put over this background image.</p>
-                        <a href="#">link</a>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
                     </div>
                     <div class="col-sm-8 my-col bg-light">
-                        1 of 2
+                        <p>About: <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nulla unde. Consequuntur non libero facere labore quisquam exercitationem laborum soluta harum saepe quaerat, est eos pariatur quidem? Esse quas voluptatibus aperiam in rerum ducimus nesciunt et illum ipsum eos. Vitae labore nesciunt tempore architecto eveniet!</p>
                     </div>
                 </div>
                 <div class="row my-row">
                     <div class="col-sm-4 my-col bg-light" id="background-image">
-                        2 of 1
+                        <p>This is some text you can put over this background image.</p>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <p>This is some text you can put over this background image.</p>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
                     </div>
                     <div class="col-sm-8 my-col bg-light">
-                        2 of 2
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, molestiae consequuntur accusamus aut ipsa numquam atque provident odit blanditiis, vitae ad! Deserunt animi cum, nobis ea quas quod! Nihil quos harum nulla soluta, beatae animi architecto eveniet quidem laudantium similique reprehenderit aut quod doloremque id sit excepturi eligendi?</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Donate
+                              </button>
+                              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>Thank you for considering donating! <br>Not only will your donation help, but it will benefit and uplift the lives of many that are struggling to find help in our country</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                     </div>
                 </div>
             </div>
+            <!-- Footer -->
+            <footer class="page-footer font-small blue pt-4">
+
+                <!-- Footer Links -->
+                <div class="container-fluid text-center text-md-left">
+            
+                <!-- Grid row -->
+                <div class="row bg-light">
+            
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+            
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
+            
+                    </div>
+                    <!-- Grid column -->
+            
+                    <hr class="clearfix w-100 d-md-none pb-3">
+            
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+            
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+            
+                    <ul class="list-unstyled">
+                        <li>
+                        <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+            
+                    </div>
+                    <!-- Grid column -->
+            
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+            
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+            
+                    <ul class="list-unstyled">
+                        <li>
+                        <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                        <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+            
+                    </div>
+                    <!-- Grid column -->
+            
+                </div>
+                <!-- Grid row -->
+            
+                </div>
+                <!-- Footer Links -->
+            
+                <!-- Copyright -->
+                
+                <div class="footer-copyright text-center py-3 bg-dark text-white"><span class="border-top"></span>© 2018 Copyright:
+                <a href="#">Somelink.com</a>
+                </div>
+                <!-- Copyright -->
+            
+            </footer>
+            <!-- Footer -->
         </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
