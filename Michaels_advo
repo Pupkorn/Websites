@@ -2,38 +2,54 @@
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
         <style>
 
             #backgroundImage {
-                background-image: url('bg.jpeg');
-                width:100vw;
-                height: 100%;
+                background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.267), rgba(71, 152, 218, 0.432)), url('bg.jpeg');
+                max-width: 100%;
+                height: 90%;
                 background-size: cover;
                 background-position: center;
+                background-attachment: fixed;
+            }
+
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                font-family: 'Alfa Slab One';
+                color: white;
+                text-shadow: 2px 2px 5px black;
+                padding-bottom: 30px;
             }
 
             .my-row {
-                border: 1px solid green;
-                height: 330px;
+                height: auto;
             }
 
             .my-col {
-                border: 1px dotted red;
-                height: 330x;
+                height: auto;
                 font-size: 22px;
                 padding: 13px;
                 margin: 0;
             }
 
-            #background-image {
-                background-image: url(http://placehold.jp/380x330.png);
-                background-repeat: no-repeat;
+            .right-col {
+                display: flex;
             }
-        
+
+            .left-col {
+                font-size: 35px;
+                padding: 20px;
+            }
         </style>
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom">
+    <body> 
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -55,137 +71,92 @@
               </ul>
             </div>
         </nav>
-        <div id='backgroundImage'>
+        <!-- BACKGROUND -->
+        <div class="container" id="backgroundImage">
+            <div class="centered">
+                <p>Michael's <br>Advocate</p>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div class="jumbotron jumbotron-fluid border">
             <div class="container">
-                <div class="row my-row">
-                    <div class="col-sm-4 my-col bg-light" id="background-image">
-                        <p>This is some text you can put over this background image.</p>
-                        <button type="button" class="btn btn-secondary">Secondary<span class="border-bottom"></span></button>
-                        <p>This is some text you can put over this background image.</p>
-                        <button type="button" class="btn btn-secondary">Secondary</button>
-                    </div>
-                    <div class="col-sm-8 my-col bg-light">
-                        <p>About: <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nulla unde. Consequuntur non libero facere labore quisquam exercitationem laborum soluta harum saepe quaerat, est eos pariatur quidem? Esse quas voluptatibus aperiam in rerum ducimus nesciunt et illum ipsum eos. Vitae labore nesciunt tempore architecto eveniet!</p>
-                    </div>
+                <h1 class="text-center">Support us in our mission</h1>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis sunt eaque officiis repudiandae adipisci a iure! Iusto voluptas possimus rem exercitationem excepturi nobis non nemo consequatur. Quam neque eius sint, magni tempora beatae maiores ducimus magnam similique odio repellat sed culpa fugiat recusandae saepe. Voluptatum, quisquam. Rem, iste sed.</p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="my-row row">
+                <div class="my-col col-md-4 left-col">
+                    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, officia.</h1>
+                    <button type="button" class="btn btn-primary btn-block mt-4">Donate Now</button>
                 </div>
-                <div class="row my-row">
-                    <div class="col-sm-4 my-col bg-light" id="background-image">
-                        <p>This is some text you can put over this background image.</p>
-                        <button type="button" class="btn btn-secondary">Secondary</button>
-                        <p>This is some text you can put over this background image.</p>
-                        <button type="button" class="btn btn-secondary">Secondary</button>
+                <div class="my-col col-md-8 right-col">
+                    <p>About: <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat excepturi cum molestiae cumque eos incidunt! Veniam maiores et perspiciatis deleniti blanditiis quia ipsa doloremque! Iste consequatur ad eaque quos nobis, odit quidem nisi! Ipsam commodi expedita architecto delectus corrupti harum laudantium repudiandae.</p>
+                    <p>Other: <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro distinctio facilis cupiditate saepe reprehenderit tempore nulla dicta atque, placeat harum ab asperiores autem nisi! Ut natus molestiae possimus rem ducimus eaque sapiente enim quibusdam debitis laboriosam!</p>
+                </div>
+            </div>
+            <div class="my-row row">
+                    <div class="my-col col-md-4 left-col">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsa veniam dolores natus consequuntur iusto at, amet unde modi officiis quod ipsum animi.</p>
                     </div>
-                    <div class="col-sm-8 my-col bg-light">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, molestiae consequuntur accusamus aut ipsa numquam atque provident odit blanditiis, vitae ad! Deserunt animi cum, nobis ea quas quod! Nihil quos harum nulla soluta, beatae animi architecto eveniet quidem laudantium similique reprehenderit aut quod doloremque id sit excepturi eligendi?</p>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                Donate
-                              </button>
-                              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <p>Thank you for considering donating! <br>Not only will your donation help, but it will benefit and uplift the lives of many that are struggling to find help in our country</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                    <div class="my-col col-md-8 right-col">
+                        <img src="first_pic.jpg" class="pr-2">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur alias, iste porro recusandae dolorem sapiente harum excepturi eaque! Dolores minima fuga quidem laudantium delectus exercitationem error. Quasi at doloribus, temporibus ad velit illo eum animi, magnam, explicabo aut quia commodi perferendis unde omnis. Provident quibusdam atque exercitationem perferendis, nihil expedita.</h1>
+                    </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- FOOTER -->
+            <footer class="page-footer font-small">
+                <div class="container-fluid text-center text-md-left">
+                    <div class="row bg-light">
+                        <div class="col-md-6 mt-md-0 mt-3">
+                            <h5 class="text-uppercase">Footer Content</h5>
+                            <p>Here you can use rows and columns to organize your footer content.</p>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none pb-3">
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <h5 class="text-uppercase">Links</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 4</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- Footer -->
-            <footer class="page-footer font-small blue pt-4">
-
-                <!-- Footer Links -->
-                <div class="container-fluid text-center text-md-left">
-            
-                <!-- Grid row -->
-                <div class="row bg-light">
-            
-                    <!-- Grid column -->
-                    <div class="col-md-6 mt-md-0 mt-3">
-            
-                    <!-- Content -->
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
-            
-                    </div>
-                    <!-- Grid column -->
-            
-                    <hr class="clearfix w-100 d-md-none pb-3">
-            
-                    <!-- Grid column -->
-                    <div class="col-md-3 mb-md-0 mb-3">
-            
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-            
-                    <ul class="list-unstyled">
-                        <li>
-                        <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                        <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                        <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                        <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-            
-                    </div>
-                    <!-- Grid column -->
-            
-                    <!-- Grid column -->
-                    <div class="col-md-3 mb-md-0 mb-3">
-            
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-            
-                    <ul class="list-unstyled">
-                        <li>
-                        <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                        <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                        <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                        <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-            
-                    </div>
-                    <!-- Grid column -->
-            
-                </div>
-                <!-- Grid row -->
-            
-                </div>
-                <!-- Footer Links -->
-            
-                <!-- Copyright -->
-                
-                <div class="footer-copyright text-center py-3 bg-dark text-white"><span class="border-top"></span>© 2018 Copyright:
+            <div class="footer-copyright text-center py-3 bg-dark text-white"><span class="border-top"></span>© 2018 Copyright:
                 <a href="#">Somelink.com</a>
-                </div>
-                <!-- Copyright -->
-            
+            </div>
             </footer>
-            <!-- Footer -->
         </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
